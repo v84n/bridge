@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bridge - Connect Your Galaxy Watch to iPhone</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg">
+    <link rel="icon" type="image/png" href="images/favicon/favicon.png">
+    <link rel="apple-touch-icon" href="images/favicon/apple-touch-icon.png">
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -28,91 +35,99 @@
 
     <main>
         <section id="hero">
-            <h1>Bridge</h1>
-            <p class="tagline">Connect Your Galaxy Watch to iPhone</p>
-            <div class="countdown">
-                <div class="countdown-item">
-                    <span id="days">00</span>
-                    <span>Days</span>
-                </div>
-                <div class="countdown-item">
-                    <span id="hours">00</span>
-                    <span>Hours</span>
-                </div>
-                <div class="countdown-item">
-                    <span id="minutes">00</span>
-                    <span>Minutes</span>
-                </div>
-                <div class="countdown-item">
-                    <span id="seconds">00</span>
-                    <span>Seconds</span>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Bridge</h1>
+                    <p class="tagline">Connect Your Galaxy Watch to iPhone</p>
+                    <div class="countdown">
+                        <div class="countdown-item">
+                            <span id="days">00</span>
+                            <span>Days</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="hours">00</span>
+                            <span>Hours</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="minutes">00</span>
+                            <span>Minutes</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="seconds">00</span>
+                            <span>Seconds</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="features">
-            <h2>Features</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <i class="fas fa-bell"></i>
-                    <h3>Notifications Sync</h3>
-                    <p>Get all your iPhone notifications directly on your Galaxy Watch</p>
-                </div>
-                <div class="feature-card">
-                    <i class="fas fa-phone"></i>
-                    <h3>Call Management</h3>
-                    <p>Make and receive calls from your watch seamlessly</p>
-                </div>
-                <div class="feature-card">
-                    <i class="fas fa-heartbeat"></i>
-                    <h3>Health Data Sync</h3>
-                    <p>Sync all your health and fitness data with Apple Health</p>
-                </div>
-                <div class="feature-card">
-                    <i class="fas fa-music"></i>
-                    <h3>Media Controls</h3>
-                    <p>Control your iPhone's music and media playback</p>
+            <div class="section-content">
+                <h2>Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-bell"></i>
+                        <h3>Notifications Sync</h3>
+                        <p>Get all your iPhone notifications directly on your Galaxy Watch</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-phone"></i>
+                        <h3>Call Management</h3>
+                        <p>Make and receive calls from your watch seamlessly</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-heartbeat"></i>
+                        <h3>Health Data Sync</h3>
+                        <p>Sync all your health and fitness data with Apple Health</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-music"></i>
+                        <h3>Media Controls</h3>
+                        <p>Control your iPhone's music and media playback</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="interest">
-            <h2>Show Interest</h2>
-            <form id="interestForm">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="watchModel">Preferred Watch Model</label>
-                    <select id="watchModel" name="watchModel" required>
-                        <option value="">Select your watch</option>
-                        <option value="galaxy-watch-7">Galaxy Watch 7</option>
-                        <option value="galaxy-watch-6">Galaxy Watch 6</option>
-                        <option value="galaxy-watch-5">Galaxy Watch 5</option>
-                        <option value="other">Other Wear OS Watch</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="topFeature">Top Feature Priority</label>
-                    <select id="topFeature" name="topFeature" required>
-                        <option value="">Select feature</option>
-                        <option value="notifications">Notifications</option>
-                        <option value="calls">Calls</option>
-                        <option value="health">Health Data</option>
-                        <option value="media">Media Controls</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message (Optional)</label>
-                    <textarea id="message" name="message"></textarea>
-                </div>
-                <button type="submit">Submit Interest</button>
-            </form>
+            <div class="section-content">
+                <h2>Show Interest</h2>
+                <form id="interestForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="watchModel">Preferred Watch Model</label>
+                        <select id="watchModel" name="watchModel" required>
+                            <option value="">Select your watch</option>
+                            <option value="galaxy-watch-7">Galaxy Watch 7</option>
+                            <option value="galaxy-watch-6">Galaxy Watch 6</option>
+                            <option value="galaxy-watch-5">Galaxy Watch 5</option>
+                            <option value="other">Other Wear OS Watch</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="topFeature">Top Feature Priority</label>
+                        <select id="topFeature" name="topFeature" required>
+                            <option value="">Select feature</option>
+                            <option value="notifications">Notifications</option>
+                            <option value="calls">Calls</option>
+                            <option value="health">Health Data</option>
+                            <option value="media">Media Controls</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message (Optional)</label>
+                        <textarea id="message" name="message"></textarea>
+                    </div>
+                    <button type="submit">Submit Interest</button>
+                </form>
+            </div>
         </section>
     </main>
 
