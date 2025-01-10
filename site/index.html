@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#0070F5">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <title>Bridge - Connect Your Galaxy Watch to iPhone</title>
     
     <!-- Favicon -->
@@ -15,6 +18,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <div class="status-bar"></div>
     <header>
         <nav>
             <div class="logo">
@@ -65,25 +69,65 @@
             <div class="section-content">
                 <h2>Features</h2>
                 <div class="features-grid">
-                    <div class="feature-card">
+                    <div class="feature-card primary">
                         <i class="fas fa-bell"></i>
-                        <h3>Notifications Sync</h3>
-                        <p>Get all your iPhone notifications directly on your Galaxy Watch</p>
+                        <h3>Smart Notifications</h3>
+                        <p>Get iPhone notifications with quick replies and voice-to-text responses for iMessage, WhatsApp, and more</p>
                     </div>
                     <div class="feature-card">
                         <i class="fas fa-phone"></i>
                         <h3>Call Management</h3>
-                        <p>Make and receive calls from your watch seamlessly</p>
+                        <p>Make and receive iPhone calls, manage contacts, and view call history from your Galaxy Watch</p>
                     </div>
-                    <div class="feature-card">
+                    <div class="feature-card primary">
                         <i class="fas fa-heartbeat"></i>
-                        <h3>Health Data Sync</h3>
-                        <p>Sync all your health and fitness data with Apple Health</p>
+                        <h3>Health Integration</h3>
+                        <p>Two-way sync between Samsung Health and Apple Health with comprehensive health tracking and insights</p>
                     </div>
                     <div class="feature-card">
                         <i class="fas fa-music"></i>
                         <h3>Media Controls</h3>
-                        <p>Control your iPhone's music and media playback</p>
+                        <p>Control Apple Music, podcasts, AirPlay devices, and adjust volume directly from your watch</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-home"></i>
+                        <h3>HomeKit Control</h3>
+                        <p>Control Apple HomeKit devices, scenes, and automations from your Galaxy Watch</p>
+                    </div>
+                    <div class="feature-card primary">
+                        <i class="fas fa-calendar"></i>
+                        <h3>Calendar & Reminders</h3>
+                        <p>Two-way sync with iPhone calendar, reminders, and events for seamless scheduling</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-camera"></i>
+                        <h3>Camera Remote</h3>
+                        <p>Control iPhone camera, view preview, and capture photos directly from your watch</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Safety Features</h3>
+                        <p>Emergency SOS, fall detection, Medical ID access, and location sharing with Find My app</p>
+                    </div>
+                    <div class="feature-card primary">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Location Services</h3>
+                        <p>Navigation, Find My Device integration, and location-based reminders</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-microphone"></i>
+                        <h3>Voice Assistant</h3>
+                        <p>Access Siri through your Galaxy Watch for seamless voice commands and queries</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-wallet"></i>
+                        <h3>Wallet Integration</h3>
+                        <p>View Apple Pay transactions, passes, and tickets on your Galaxy Watch</p>
+                    </div>
+                    <div class="feature-card primary">
+                        <i class="fas fa-cloud"></i>
+                        <h3>iCloud Sync</h3>
+                        <p>Access iCloud Drive files, photos, and notes directly from your watch</p>
                     </div>
                 </div>
             </div>
@@ -115,15 +159,57 @@
                         <label for="topFeature">Top Feature Priority</label>
                         <select id="topFeature" name="topFeature" required>
                             <option value="">Select feature</option>
-                            <option value="notifications">Notifications</option>
-                            <option value="calls">Calls</option>
-                            <option value="health">Health Data</option>
-                            <option value="media">Media Controls</option>
+                            <optgroup label="Communication">
+                                <option value="notifications">Smart Notifications & Messages</option>
+                                <option value="calls">Call Management</option>
+                                <option value="voice">Voice Assistant (Siri)</option>
+                            </optgroup>
+                            <optgroup label="Health & Safety">
+                                <option value="health">Health & Fitness Integration</option>
+                                <option value="safety">Safety & Emergency Features</option>
+                            </optgroup>
+                            <optgroup label="Media & Controls">
+                                <option value="media">Media & Music Controls</option>
+                                <option value="camera">Camera Remote Control</option>
+                                <option value="homekit">HomeKit Integration</option>
+                            </optgroup>
+                            <optgroup label="Productivity">
+                                <option value="calendar">Calendar & Reminders</option>
+                                <option value="location">Location Services</option>
+                                <option value="icloud">iCloud Integration</option>
+                                <option value="wallet">Wallet & Payment Features</option>
+                            </optgroup>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="message">Message (Optional)</label>
-                        <textarea id="message" name="message"></textarea>
+                        <label for="secondaryFeature">Secondary Feature Priority</label>
+                        <select id="secondaryFeature" name="secondaryFeature" required>
+                            <option value="">Select feature</option>
+                            <optgroup label="Communication">
+                                <option value="notifications">Smart Notifications & Messages</option>
+                                <option value="calls">Call Management</option>
+                                <option value="voice">Voice Assistant (Siri)</option>
+                            </optgroup>
+                            <optgroup label="Health & Safety">
+                                <option value="health">Health & Fitness Integration</option>
+                                <option value="safety">Safety & Emergency Features</option>
+                            </optgroup>
+                            <optgroup label="Media & Controls">
+                                <option value="media">Media & Music Controls</option>
+                                <option value="camera">Camera Remote Control</option>
+                                <option value="homekit">HomeKit Integration</option>
+                            </optgroup>
+                            <optgroup label="Productivity">
+                                <option value="calendar">Calendar & Reminders</option>
+                                <option value="location">Location Services</option>
+                                <option value="icloud">iCloud Integration</option>
+                                <option value="wallet">Wallet & Payment Features</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Additional Feature Requests (Optional)</label>
+                        <textarea id="message" name="message" placeholder="Tell us about other features you'd like to see"></textarea>
                     </div>
                     <button type="submit">Submit Interest</button>
                 </form>
