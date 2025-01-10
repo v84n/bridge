@@ -1,0 +1,34 @@
+Create a coming soon website for a new product. Product is called "Bridge", an app that facilitates connecting Android Wear OS watches such as the Samsung Galaxy Watch 7 to iPhone. When connected, it enables syncing of notifications, calls, health data, and more.
+
+The website should be minimalistic and modern, with a focus on the product's features and benefits. It should be visually appealing and easy to navigate.
+
+The website should be responsive and look good on both desktop and mobile devices.
+
+The website should be built with HTML, CSS, and JavaScript.
+
+Website should include a "coming soon" countdown timer with days, hours, minutes, and seconds. Product launch date is April 15, 2025.
+
+Website should include a "show interest" form asking users to enter their name, email address, preferred watch model, top feature they want to see at earliest, and a message. Collecting this information will help us understand user needs and prioritize features. This data will not be used for any other purpose. This form data will be used to send updates about the product and to notify users when the product is ready to use. This form data needs to be stored in a secure and private way, suggest utilizing a free database service such as Firebase or Supabase that has a simple service to store and retrieve data directly from the form.
+
+Website should include a "features" section with a list of the product's features and benefits.
+
+Website should include a "contact" section with a contact form
+
+Website should include a "privacy policy" section with a link to the privacy policy.
+
+Website should include a "terms of service" section with a link to the terms of service.
+
+Github link: https://github.com/v84n/bridge
+
+Create/ Update readme.md file with the following information:
+- Product name
+- Product description
+- Product features
+- Product launch date
+- Product pricing
+- Product contact information
+- Product privacy policy
+- Product terms of service
+- Product Github link
+
+Create static website in ./site directory.
